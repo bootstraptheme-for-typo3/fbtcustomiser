@@ -1,0 +1,5 @@
+plugin.tx_fbtcustomiser.view {
+	templateRootPath = EXT:fbtcustomiser/Resources/Private/Templates/
+	partialRootPath = EXT:fbtcustomiser/Resources/Private/Partials/
+	layoutRootPath = EXT:fbtcustomiser/Resources/Private/Layouts/
+}
