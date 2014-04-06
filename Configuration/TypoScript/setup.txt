@@ -3,6 +3,9 @@ plugin.tx_fbtcustomiser.view {
 	partialRootPath = {$plugin.tx_fbtcustomiser.view.partialRootPath}
 	layoutRootPath = {$plugin.tx_fbtcustomiser.view.layoutRootPath}
 }
-plugin.tx_fluidbootstraptheme.view.overlays.fbtcustomiser.partialRootPath = EXT:fbtcustomiser/Resources/Private/Partials/
-plugin.tx_fluidbootstraptheme.view.overlays.fbtcustomiser.templateRootPath = EXT:fbtcustomiser/Resources/Private/Templates/
-plugin.tx_fluidbootstraptheme.view.overlays.fbtcustomiser.layoutRootPath = EXT:fbtcustomiser/Resources/Private/Layouts/
+
+plugin.tx_fluidbootstraptheme.view.overlays.fbtcustomiser {
+	partialRootPath =  {$plugin.tx_fbtcustomiser.view.partialRootPath}
+	templateRootPath = {$plugin.tx_fbtcustomiser.view.templateRootPath}
+	layoutRootPath = {$plugin.tx_fbtcustomiser.view.layoutRootPath}
+}
