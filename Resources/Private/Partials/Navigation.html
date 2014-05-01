@@ -55,15 +55,15 @@
 								<f:if condition="{menuItem.hasSubPages}">
 									<f:then>
 										<li class="{menuItem.class}">
-											<a href="{menuItem.link}" class="dropdown-toggle" data-toggle="dropdown">{menuItem.title}<b
+											<a href="{menuItem.link}" class="dropdown-toggle" data-toggle="dropdown">{menuItem.linktext}<b
 													class="caret"></b></a>
 											<v:page.menu pageUid="{menuItem.uid}" >
 
 												<ul class="dropdown-menu">
-													<f:for each="{menu}" as="subItem" iteration="iteration">
+													<f:for each="{menu}" as="subItem">
 
 														<li class="{subItem.class}">
-															<a href="{subItem.link}">{subItem.title}</a>
+															<a href="{subItem.link}">{subItem.linktext}</a>
 														</li>
 													</f:for>
 												</ul>
@@ -72,7 +72,7 @@
 									</f:then>
 									<f:else>
 										<li class="{menuItem.class}">
-											<a href="{menuItem.link}" class="{menuItem.class}">{menuItem.title}</a>
+											<a href="{menuItem.link}" class="{menuItem.class}">{menuItem.linktext}</a>
 										</li>
 									</f:else>
 								</f:if>
