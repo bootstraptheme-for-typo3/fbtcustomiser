@@ -51,10 +51,10 @@ before_script:
 
 script:
 # phplint checking on all PHP source files in extension
-  - typo3/cli_dispatch.phpsh extbase builder:phpsyntax --extension ftbcustomiser
+  - typo3/cli_dispatch.phpsh extbase builder:phpsyntax --extension fbtcustomiser
 # fluid template syntax checking on all files in extension
-  - typo3/cli_dispatch.phpsh extbase builder:fluidsyntax --extension ftbcustomiser
+  - typo3/cli_dispatch.phpsh extbase builder:fluidsyntax --extension fbtcustomiser
 # PHPCodeSniffer code inspection with only errors displayed (no warnings)
-  - build-environment/CodeSniffer/scripts/phpcs -n --standard=$PWD/build-environment/FluidTYPO3-CodingStandards/ruleset.xml $PWD/typo3conf/ext/ftbcustomiser
+  - build-environment/CodeSniffer/scripts/phpcs -n --standard=$PWD/build-environment/FluidTYPO3-CodingStandards/ruleset.xml $PWD/typo3conf/ext/fbtcustomiser
 # PHPUnit tests from overridden phpunit tests configuration file
   - if [[ -f typo3conf/ext/fluidbootstraptheme/Tests/phpunit.xml ]]; then typo3/cli_dispatch.phpsh phpunit -c phpunit.xml --coverage-text; fi
